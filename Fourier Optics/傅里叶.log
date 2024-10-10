@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 20:06
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**./衍射.tex
-(衍射.tex
+**./傅里叶.tex
+(傅里叶.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Users\JackyFeng\AppData\Local\Programs\MiKTeX\tex/latex/ctex\ctexart.cls
@@ -945,12 +945,12 @@ dern.sty
 Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count341
 ) 
-))) (衍射.aux
+))) (傅里叶.aux
 
 LaTeX Warning: Label `eq:diffraction2' multiply defined.
 
 )
-\openout1 = `衍射.aux'.
+\openout1 = `傅里叶.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -1064,9 +1064,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 10.
-(衍射.out) (衍射.out)
+(傅里叶.out) (傅里叶.out)
 \@outlinefile=\write4
-\openout4 = `衍射.out'.
+\openout4 = `傅里叶.out'.
 
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
@@ -1144,30 +1144,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 73.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1176,43 +1152,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-Overfull \hbox (98.59889pt too wide) in paragraph at lines 103--106
-[]\TU/SimSun(0)/m/n/10.53937 不 确 定 度 $\OT1/cmr/m/n/10.53937 ^^A[] = [][] = [][]
- =
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\circ' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1221,21 +1160,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[3]
-File: 微信图片_20240424235811.jpg Graphic file (type bmp)
-<微信图片_20240424235811.jpg>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[4] 
+[3] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(衍射.aux)
+(傅里叶.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -1244,16 +1171,16 @@ L3 programming layer <2022/07/14>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `衍射.out' has not changed.
-(rerunfilecheck)             Checksum: 064D8A5FBCE4CA428EADFD5DF3568256;2389.
+Package rerunfilecheck Info: File `傅里叶.out' has not changed.
+(rerunfilecheck)             Checksum: DBE762AEC6702EDB0EF36FE1F51881FB;2038.
  ) 
 Here is how much of TeX's memory you used:
- 27977 strings out of 410379
- 592280 string characters out of 5787239
+ 27962 strings out of 410379
+ 591918 string characters out of 5787239
  1934416 words of memory out of 5000000
- 48861 multiletter control sequences out of 15000+600000
+ 48848 multiletter control sequences out of 15000+600000
  567843 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,106p,1195b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,106p,1196b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 衍射.pdf (4 pages).
+Output written on 傅里叶.pdf (3 pages).

@@ -77,93 +77,12 @@
       改变入射角,当目镜中谱线折返时，即为最小偏向角的位置，从而可由该谱线
       的方位及零级谱线的方位（即入射光的方位）测出最小偏向角$\delta$。
 
-\section{数据处理}
-  \subsection{$i=0$时$\varphi_m$}
-  \begin{table}[h]
-    \centering
-    \begin{tabular}{c|c|c|c}
-      \hline
-      \multicolumn{2}{c|}{绿} & \multicolumn{2}{c}{黄} \\
-      \hline
-      $\varphi_{left}$ & $\varphi_{right}$ & $\varphi_{left}$ & $\varphi_{right}$\\
-      \hline
-      $28^{\circ}45'$&$47^{\circ}45'$&$48^{\circ}20'$& $28^{\circ}15'$\\
-      \hline
-      $208^{\circ}40'$&$227^{\circ}40'$&$228^{\circ}15'$&$208^{\circ}10'$\\
-    \end{tabular}
-  \end{table}
-    测量一级条纹
+\section{实验内容}
 
-    1、绿线求d：
-    
-    $d=\lambda / \sin{\frac{\varphi_{right}-\varphi_{left}}{2}} 
-    =\frac {546.1nm} {\sin{\frac{227^{\circ}40'-208^{\circ}40'+47^{\circ}45'-28^{\circ}45'}{4}}}
-    =3308.7nm$
 
-    不确定度$\Delta_{d} = \frac{\lambda \cos\frac{\varphi_{right}-\varphi_{left}}{2}}{2\sin^{2}\frac{\varphi_{right}-\varphi_{left}}{2}}  \sqrt{(\Delta_{\varphi_{right}})^2+(\Delta_{\varphi_{left}})^2}
-    =\frac{546.1nm \cos\frac{227^{\circ}40'-208^{\circ}40'+47^{\circ}45'-28^{\circ}45'}{4}}{2\sin^{2}\frac{227^{\circ}40'-208^{\circ}40'+47^{\circ}45'-28^{\circ}45'}{4}}  \sqrt{(1'/\sqrt{2})^2+(1'/\sqrt{2})^2}                   
-    =2nm$
-
-    所以$d = 3308 \pm 2 nm$
-
-    2、黄线求$\lambda$：
-
-    $\lambda=d \sin{\varphi_m} 
-       =3308nm \times \sin(\frac{228^{\circ}15'-208^{\circ}10'+48^{\circ}20'-28^{\circ}15'}{4})
-       =576.8nm$
-
-    $\Delta_{\lambda} = d \cos \varphi_m \times \Delta_{INS} /4
-      =3308nm \times \cos \frac{228^{\circ}15'-208^{\circ}10'+48^{\circ}20'-28^{\circ}15'}{4} \times 1'
-      =0.9nm$
-
-    所以$\lambda = 576.8 \pm 0.9 nm$，与真值579.1nm偏差$0.3 \%$
-
-  \subsection{$i=15^{\circ}$时$\varphi_m$}
-  \begin{table}[h]
-    \centering
-    \begin{tabular}{c|c}
-      \hline
-      $\varphi_{-1}$ & $\varphi_{1}$ \\
-      \hline
-      $43^{\circ}30'$&$53^{\circ}25'$\\
-      \hline
-      $223^{\circ}20'$&$233^{\circ}25'$\\
-    \end{tabular}
-  \end{table}
-  位于异侧
-
-  测量一级条纹
-  $\lambda=d (\sin{\varphi} + \sin{i}) 
-  =3308nm \times (\sin \frac{233^{\circ}25'-223^{\circ}20'+53^{\circ}25'-43^{\circ}30'}{4}-sin(15^{\circ}))
-  =567.9nm$
-
-  与真值579.1nm偏差$2 \%$
-  \subsection{最小偏向角}
-  \begin{table}[h]
-    \centering
-    \begin{tabular}{c|c}
-      \hline
-      法线位置 & 最小偏向角位置 \\
-      \hline
-      $28^{\circ}40'$&$48^{\circ}45'$\\
-      \hline
-      $208^{\circ}30'$&$228^{\circ}35'$\\
-    \end{tabular}
-  \end{table}
-
-  $\lambda=2d \sin{\delta / 2}
-    =2 \times 3308nm \times \sin(\frac{228^{\circ}35'-208^{\circ}30'+48^{\circ}45'-28^{\circ}40'}{4})
-    =579.0nm$
-
-  与真值579.1nm偏差$0.01 \%$
 \section{总结}
 \begin{itemize}
   \item 对光波衍射现象和光栅有了更深的了解
   \item 学会了分光计的操作方法
 \end{itemize}
-\section{原始数据}
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.4\textwidth,height=0.5\textwidth]{微信图片_20240424235811.jpg}
-  \end{figure} 
 \end{document}

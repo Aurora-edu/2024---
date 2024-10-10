@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 18:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -945,8 +945,11 @@ dern.sty
 Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count341
 ) 
-)))
-No file 衍射.aux.
+))) (衍射.aux
+
+LaTeX Warning: Label `eq:diffraction2' multiply defined.
+
+)
 \openout1 = `衍射.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -1025,6 +1028,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 10.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 10.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1060,11 +1064,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 10.
+(衍射.out) (衍射.out)
 \@outlinefile=\write4
 \openout4 = `衍射.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
@@ -1091,6 +1093,7 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
+
 (C:\Users\JackyFeng\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1100,16 +1103,10 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 (C:\Users\JackyFeng\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Reference `eq:diffraction' on page 1 undefined on input line 32.
-
-
 File: 图片.png Graphic file (type bmp)
 <图片.png>
 File: 图片2.png Graphic file (type bmp)
 <图片2.png>
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 58.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1171,9 +1168,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 81.
 
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 94.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1220,9 +1214,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 121.
 
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 163.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1233,9 +1224,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [3]
 File: 微信图片_20240424235811.jpg Graphic file (type bmp)
 <微信图片_20240424235811.jpg>
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 169.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1254,30 +1242,18 @@ L3 programming layer <2022/07/14>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `衍射.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `衍射.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  064D8A5FBCE4CA428EADFD5DF3568256;2389.
-
-Package lastpage Warning: Rerun to get the references right on input line 169.
-
+Package rerunfilecheck Info: File `衍射.out' has not changed.
+(rerunfilecheck)             Checksum: 064D8A5FBCE4CA428EADFD5DF3568256;2389.
  ) 
 Here is how much of TeX's memory you used:
- 27964 strings out of 410379
- 592155 string characters out of 5787239
+ 27977 strings out of 410379
+ 592280 string characters out of 5787239
  1934416 words of memory out of 5000000
- 48854 multiletter control sequences out of 15000+600000
+ 48861 multiletter control sequences out of 15000+600000
  567843 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,12n,106p,1195b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,106p,1195b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 衍射.pdf (4 pages).

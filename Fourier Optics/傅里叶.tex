@@ -11,78 +11,84 @@
 \maketitle
 
 \begin{abstract}
-  我们在基物课上学习了光的衍射现象与光栅的原理，这次实验我们使用分光计，运用衍射光栅测
-  光的波长，从而可以更加深刻理解我们课上学的光栅衍射公式。
+  本实验旨在通过搭建傅里叶光学系统，观察并理解光波的衍射、成像、滤波等基本现象，
+  并探究傅里叶光学在光学成像中的应用。
 \end{abstract}
 
 \section{实验原理}
-  \subsection{测定光栅常数和光波波长}
-    理想的光栅可看作是许多平行的、等距离的和等宽的狭缝。
+傅里叶光学是研究光波经过光学系统后的衍射和成像规律的科学。
+本实验采用4f光学系统，利用透镜对光波进行变换，在傅里叶平面上观察到光波的频谱信息，并通过滤波等手段实现对图像的处理。
 
-    设有一光栅常数 d=AB 的光栅 G。有一束平行光与光栅法线成
-    角度 i，入射于光栅上产生衍射，如图 所示。
-
-    若衍射相干加强从而产生明亮的条纹，则光程差满足方程
-    \begin{equation}\label{eq:diffraction}
-      d (\sin{\varphi} \pm \sin{i}) = m\lambda 
-    \end{equation}
-    入射光线和衍射光线都在光栅法线的同侧时取正号；两者分居法线异侧时取负号。式中的 m 为衍
-    射光谱的级次，m 为 0，$\pm1$，$\pm2$ 等，m 的符号取决于光程差的符号。
-
-    在光线正入射的情形下，i=0，则式\eqref{eq:diffraction}变成
-    \begin{equation}
-      d \sin{\varphi_m} = m\lambda
-    \end{equation}
-    从而可用分光计测出衍射角$\varphi_m$，从已知波长可以测出光栅常数$d$。
-    \begin{figure}[htbp]
-      \centering
-      \includegraphics[width=0.2\textwidth,height=0.25\textwidth]{图片.png}
-      \caption{光栅衍射}
-      \end{figure} 
-  \subsection{用最小偏向角法测定光波波长}
-  若与入射线同在光栅法线一侧，类似的有
-  \begin{equation}\label{eq:diffraction2}
-    d (\sin{\varphi} + \sin{i}) = m\lambda 
-  \end{equation}
-  如图所示
-  \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.2\textwidth,height=0.25\textwidth]{图片2.png}
-    \end{figure} 
-  偏向角$\Delta =\varphi + i$,当$\varphi=i$时$\Delta$最小，记为$\delta $称为最小偏向角，此时有
-  \begin{equation}\label{eq:diffraction2}
-    2d \sin{\delta / 2} = m\lambda \qquad  m=0,1,2…
-  \end{equation}
 \section{实验仪器及实验步骤}
-  仪器：分光计，光栅，汞灯
+  仪器：* LED光源
+  * 准直透镜
+  * 物镜
+  * 套筒透镜
+  * 相机
+  * Target
+  * Condenser lens
+  * Aperture Iris
+  * Field Iris
+  * Projection lens
+  * 观察屏
+  * 分束器
+  * 滤光片
+  * Mask
   \subsection{调节望远镜}
-    \subsubsection{调节望远镜适合于观察平行光}
-      先粗调目镜与叉丝的距离。然后将平面镜放在小平台上，点亮望远镜上的小灯，，缓慢转动小平台，从望远镜中寻
-      找镜面反射回来的绿＋字像或绿光斑。找到＋字像或绿光斑后，轻轻旋转“望远镜调焦旋钮”，从目镜中
-      看到清晰的＋字像
-    \subsubsection{调节望远镜光轴垂直于分光计主轴}
-    先从望远镜中看到由平面镜的一面反射的＋字像,采取逐步减半逼近法：先调小平台下的螺钉使＋字像与叉丝上交点之间的上下距离减
-    半，再调节望远镜的俯仰角调节螺钉使像与叉丝上交点重合，然后转动平台 180°进行
-    同样调节，反复几次便可很快调好。
-    \subsection{调节平行光管}
-    调节狭缝和透镜间的距离，从望远镜中看到的是一清晰的狭缝像，到狭缝像的中点与叉丝中心交点重合
-    \subsection{在光线垂直入射的情形下，即$i=0$时，测定光栅常数和光波波长}
-    调节使光栅平面与平行光管的光轴垂直，光栅刻线(缝)与分光计主轴平行，
-    然后测量零级左右两侧各对应级次的衍射线的夹角$2\varphi _m$
-    \subsection{在$i=15^{\circ}$时，测定汞灯光谱中波长较长(579.1nm)
-    的黄线的波长。}
-    使光栅平面法线与平行光管光轴的夹角（即入射角）等于$15^{\circ}$，同时记下入射光方
-位和光栅平面的法线方位。然后测定波长较长的黄线的衍射角
-    \subsection{用最小偏向角法测定波长较长(579.1nm)的黄线的波长}
-      改变入射角,当目镜中谱线折返时，即为最小偏向角的位置，从而可由该谱线
-      的方位及零级谱线的方位（即入射光的方位）测出最小偏向角$\delta$。
 
-\section{实验内容}
+\section{实验步骤}
+1. 搭建4f光学系统，按照文档中提供的步骤进行调节，确保各个光学元件的高度、位置和角度正确。
 
+2. 使用相机观察Target上的图案，并通过调节焦距和曝光时间获得清晰的图像。
+
+3. 调节分束器和Projection lens，将傅里叶平面上的图像投射到观察屏上。
+
+4. 进行以下实验内容：
+    * \textbf{开普勒望远镜成像}：观察Field lens和Condenser lens、Condenser lens和Objective lens组合后的成像效果。
+    
+    * \textbf{观察傅里叶面}：观察Target上不同图案的傅里叶变换图像。
+    
+    * \textbf{Field Iris和Aperture Iris的作用}：分析光阑对成像、傅里叶面和物体照明的影响。
+    
+    * \textbf{Projection lens成像}：观察图像从清晰到模糊再到傅里叶平面的变化过程。
+    
+    * \textbf{光学滤波}：使用狭缝和Mask对傅里叶图像进行滤波，观察滤波对最终成像的影响。
+    
+    * \textbf{巴比内原理}：观察互补结构的傅里叶变换图像。
+    
+    * \textbf{图像编辑}：通过调节光阑和Mask实现柔焦和暗场成像。
+    
+    * \textbf{衍射极限分辨率}：验证阿贝衍射极限定律。
+
+\section{实验结果}
+\subsection{开普勒望远镜成像}
+* Field lens和Condenser lens组合后，图像被放大并成倒立。
+* Condenser lens和Objective lens组合后，图像被放大并成正立。
+\subsection{观察傅里叶面}
+* Target上不同图案的傅里叶变换图像呈现出不同的衍射斑。
+\subsection{Field Iris和Aperture Iris的作用}
+* Field Iris控制物体照明区域，影响图像亮度。
+* Aperture Iris控制成像系统孔径，影响图像分辨率和衍射斑形状。
+\subsection{Projection lens成像}
+* 图像从清晰到模糊再到傅里叶平面的变化过程体现了光学成像的原理。
+\subsection{光学滤波}
+* 通过滤波可以突出图像的特定频率成分，实现图像增强或去噪。
+\subsection{巴比内原理}
+* 互补结构的傅里叶变换图像相同，验证了巴比内原理。
+\subsection{图像编辑}
+* 柔焦可以突出图像的低频成分，暗场成像可以突出图像的高频成分。
+\subsection{衍射极限分辨率}
+* 实验验证了阿贝衍射极限定律，只有当至少第一个衍射阶次通过成像系统时，才能形成清晰的图像。
+
+\section{实验思考}
+* 如何进一步提高光学系统的分辨率？
+* 如何利用傅里叶光学进行图像重建？
+* 傅里叶光学在哪些领域具有应用前景？
 
 \section{总结}
 \begin{itemize}
-  \item 对光波衍射现象和光栅有了更深的了解
-  \item 学会了分光计的操作方法
+  \item 本实验通过搭建傅里叶光学系统，观察并理解了光波的衍射、成像、滤波等基本现象，
+  并探究了傅里叶光学在光学成像中的应用。实验结果表明，傅里叶光学在图像处理、光学测量等领域具有广泛的应用前景。
+
 \end{itemize}
 \end{document}

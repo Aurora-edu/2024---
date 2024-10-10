@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 20:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  10 OCT 2024 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -945,11 +945,7 @@ dern.sty
 Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count341
 ) 
-))) (傅里叶.aux
-
-LaTeX Warning: Label `eq:diffraction2' multiply defined.
-
-)
+))) (傅里叶.aux)
 \openout1 = `傅里叶.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -1091,22 +1087,6 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
-
-
-(C:\Users\JackyFeng\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
-
-
-(C:\Users\JackyFeng\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-File: 图片.png Graphic file (type bmp)
-<图片.png>
-File: 图片2.png Graphic file (type bmp)
-<图片2.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1120,30 +1100,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 73.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 73.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\circ' on input line 73.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 73.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1151,16 +1107,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[2]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[3] 
+[2] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (傅里叶.aux)
  ***********
@@ -1169,18 +1116,24 @@ L3 programming layer <2022/07/14>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `傅里叶.out' has not changed.
-(rerunfilecheck)             Checksum: DBE762AEC6702EDB0EF36FE1F51881FB;2038.
+
+Package rerunfilecheck Warning: File `傅里叶.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `傅里叶.out':
+(rerunfilecheck)             Before: 2F87462D2754F2973C5C65CC1D23DCC3;2865
+(rerunfilecheck)             After:  94883B2A6B8EE17AFE6A8D4C8A02A4BD;1552.
  ) 
 Here is how much of TeX's memory you used:
- 27962 strings out of 410379
- 591918 string characters out of 5787239
- 1934416 words of memory out of 5000000
- 48848 multiletter control sequences out of 15000+600000
- 567843 words of font info for 105 fonts, out of 8000000 for 9000
+ 27783 strings out of 410379
+ 585144 string characters out of 5787239
+ 1939416 words of memory out of 5000000
+ 48701 multiletter control sequences out of 15000+600000
+ 560327 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,106p,1196b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,106p,1196b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 傅里叶.pdf (3 pages).
+Output written on 傅里叶.pdf (2 pages).

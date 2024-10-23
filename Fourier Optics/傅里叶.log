@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  23 OCT 2024 21:07
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.31)  23 OCT 2024 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,6 +1005,8 @@ File: pictures/微信图片_20241010200924.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010200924.jpg>
 File: pictures/微信图片_20241010200942.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010200942.jpg>
+File: pictures/微信图片_20241010200955.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010200955.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1016,15 +1018,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-File: pictures/微信图片_20241010200955.jpg Graphic file (type bmp)
-<pictures/微信图片_20241010200955.jpg>
-
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:mapping=t
 ex-text;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:mapping=t
 ex-text;!
 File: pictures/微信图片_20241010201008.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201008.jpg>
+File: pictures/微信图片_20241010201015.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010201015.jpg>
+File: pictures/微信图片_20241010201018.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010201018.jpg>
+File: pictures/微信图片_20241010201022.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010201022.jpg>
+File: pictures/微信图片_20241010201025.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010201025.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1034,14 +1041,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-File: pictures/微信图片_20241010201015.jpg Graphic file (type bmp)
-<pictures/微信图片_20241010201015.jpg>
-File: pictures/微信图片_20241010201018.jpg Graphic file (type bmp)
-<pictures/微信图片_20241010201018.jpg>
-File: pictures/微信图片_20241010201022.jpg Graphic file (type bmp)
-<pictures/微信图片_20241010201022.jpg>
-File: pictures/微信图片_20241010201025.jpg Graphic file (type bmp)
-<pictures/微信图片_20241010201025.jpg>
 File: pictures/微信图片_20241010201028.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201028.jpg>
 File: pictures/微信图片_20241010201031.jpg Graphic file (type bmp)
@@ -1089,23 +1088,16 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-
-
-Package rerunfilecheck Warning: File `傅里叶.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `傅里叶.out':
-(rerunfilecheck)             Before: 0EE7CDA041F563AC322D4B9AB53489D9;1855
-(rerunfilecheck)             After:  B6AA0F733384F286864D628CB3469103;1917.
+Package rerunfilecheck Info: File `傅里叶.out' has not changed.
+(rerunfilecheck)             Checksum: 758554344E6F5E4198F3233138ED5555;2183.
  ) 
 Here is how much of TeX's memory you used:
  28150 strings out of 474773
  612827 string characters out of 5757724
- 1949839 words of memory out of 5000000
+ 1950839 words of memory out of 5000000
  49832 multiletter control sequences out of 15000+600000
  560287 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,107p,1212b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,107p,1212b,372s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 傅里叶.pdf (5 pages).

@@ -4,9 +4,9 @@
 \usepackage{float} 
 
 \title{傅里叶光学实验报告}
-\class{物理 32}
+\class{物理 32/物理 31}
 \name{冯家琦/周方远}
-\id{2023011338}
+\id{2023011338/2023011263}
 
 \begin{document}
 \maketitle
@@ -41,10 +41,8 @@
 \subsection{开普勒望远镜成像}
 将Field lens和Condenser lens依次摆在光源前，并使两者间隔为两者焦距之和。将Target放在光源与Field lens之间，将屏放置在Condenser lens后焦平面处，观察到倒立缩小的图像。
 
-* Field lens和Condenser lens组合后，图像被放大并成倒立。
 将Objective lens放置在Condenser lens后两者焦距之和处。将Target放在Condenser lens前焦平面处，屏放在Objective lens后焦平面处，观察到倒立缩小的图像。
 
-* Condenser lens和Objective lens组合后，图像被放大并成正立。
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241010200924.jpg}
@@ -54,6 +52,7 @@
 \subsection{开普勒望远镜（Condenser lens+ Objective lens）}
 • 将物镜（f = 30 mm） 放在 Condenser lens （f = 50 mm） 后面，使其焦平面重
 合；
+
 • 将 Target 放在 Condenser lens 的 LED 侧焦平面上，然后将观察屏放在 O 物镜的后
 焦平面上观察图像。
 \begin{figure}[htbp]
@@ -67,7 +66,7 @@
   \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241010200955.jpg}
   \caption{Projection lens成像}
 \end{figure} 
-* 图像从清晰到模糊再到傅里叶平面的变化过程体现了光学成像的原理。
+• 随着屏从前向后移动，图像从清晰到模糊再到显示傅里叶平面的成像，这一变化过程体现了光学成像的原理。
 \subsection{观察傅里叶面}
 • 调整 Target 找到晶格（例如：第一行 F2 图案，g = 15 μm，b = 6 μm 晶格）图
 案的位置，在相机上看到晶格图像的同时可以在观察屏上看到该晶格图案的清晰的
@@ -78,8 +77,9 @@
   \caption{观察傅里叶面} 
 \end{figure}
 \subsection{Field Iris和Aperture Iris的作用}
-* Field Iris控制物体照明区域，影响图像亮度。
-* Aperture Iris控制成像系统孔径，影响图像分辨率和衍射斑形状。
+• Field Iris控制物体照明区域，影响图像亮度。
+
+• Aperture Iris控制成像系统孔径，影响图像分辨率和衍射斑形状。
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.2\textwidth}
@@ -126,7 +126,38 @@
   \end{minipage}
 \end{figure}
 \subsection{巴比内原理}
-* 互补结构的傅里叶变换图像相同，验证了巴比内原理。
+• 先依照文档重新搭建完整的 4f 光学系统。  
+• 将 Target 放置在物镜光源一侧的焦平面上，将 Mask 放在物镜相机一侧的焦平面上（傅里叶面上）。  
+• 通过相机观察 Target 上的图像，并利用分束镜和 Projection lens 将傅里叶面投影在远处的观察屏上。
+
+• 调整 Target 上的 F13 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。利用 Mask 遮住傅里叶面上的零阶衍射级次，然后观察相机和观察屏上的图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241010201057.jpg}
+    \caption{F13 傅里叶面}
+  \end{minipage}
+  \hspace{0.05\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F13-nomask-Ex24.png}
+    \caption{F13 相机成像}
+  \end{minipage}
+  \hspace{0.05\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241010201100.jpg}
+    \caption{F13 Mask 遮挡后傅里叶面}
+  \end{minipage}
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F13-mask-Ex24.png}
+    \caption{F13 Mask 遮挡后相机成像}
+  \end{minipage}
+\end{figure}
+
+观察到相机中成像出原图像的互补结构，这说明原图像的傅里叶变换图像除了零阶衍射外与原图像是一致的，这就验证了巴比内原理。
 \subsection{图像编辑}
 * 柔焦可以突出图像的低频成分，暗场成像可以突出图像的高频成分。
 \subsection{衍射极限分辨率}

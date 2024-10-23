@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  23 OCT 2024 20:38
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  23 OCT 2024 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1106,6 +1106,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: pictures/微信图片_20241010200955.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010200955.jpg>
 
+Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
+File: pictures/微信图片_20241010201008.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010201008.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1123,7 +1127,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[3] 
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[4] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (傅里叶.aux)
  ***********
@@ -1131,15 +1144,15 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `傅里叶.out' has not changed.
-(rerunfilecheck)             Checksum: 6E2EA4802AEF6B40E9FD9E777CBADCE4;1611.
+(rerunfilecheck)             Checksum: D077294459EC5479B023545F370B506F;1718.
  ) 
 Here is how much of TeX's memory you used:
- 27865 strings out of 410379
- 589815 string characters out of 5787239
+ 27886 strings out of 410379
+ 590942 string characters out of 5787239
  1943416 words of memory out of 5000000
- 48780 multiletter control sequences out of 15000+600000
+ 48800 multiletter control sequences out of 15000+600000
  560311 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,106p,1196b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,106p,1196b,420s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 傅里叶.pdf (3 pages).
+Output written on 傅里叶.pdf (4 pages).

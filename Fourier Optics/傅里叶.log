@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  23 OCT 2024 20:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10) (preloaded format=xelatex 2024.3.17)  23 OCT 2024 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1103,6 +1103,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
+File: pictures/微信图片_20241010200955.jpg Graphic file (type bmp)
+<pictures/微信图片_20241010200955.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1131,10 +1134,10 @@ Package rerunfilecheck Info: File `傅里叶.out' has not changed.
 (rerunfilecheck)             Checksum: 6E2EA4802AEF6B40E9FD9E777CBADCE4;1611.
  ) 
 Here is how much of TeX's memory you used:
- 27856 strings out of 410379
- 589488 string characters out of 5787239
+ 27865 strings out of 410379
+ 589815 string characters out of 5787239
  1943416 words of memory out of 5000000
- 48772 multiletter control sequences out of 15000+600000
+ 48780 multiletter control sequences out of 15000+600000
  560311 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,11n,106p,1196b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s

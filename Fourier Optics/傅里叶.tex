@@ -125,8 +125,396 @@
 \subsection{Projection lens 成像}
 • 随着屏从前向后移动，图像从清晰到模糊再到显示傅里叶平面的成像，这一变化过程体现了光学成像的原理。
 \subsection{光学滤波}
-* 这部分实验将在下一节实验课中完成。
-* 柔焦可以突出图像的低频成分，暗场成像可以突出图像的高频成分。
+• 先依照文档重新搭建完整的 4f 光学系统。
+
+• 将 Target 放置在物镜光源一侧的焦平面上，将 Mask 放在物镜相机一侧的焦平面上（傅里叶面上）。
+
+• 通过相机观察 Target 上的图像，并利用分束镜和 Projection lens 将傅里叶面投影在远处的观察屏上。
+\subsubsection{F2}
+调整 Target 上的 F2 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241010201054.jpg}
+    \caption{F2 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F2-nomask.png}
+    \caption{F2 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 Mask 上的横条纹遮住傅里叶面上除了中间行以外的其他行。观察到相机中的图像变为竖条纹，这是因为仅有水平方向的波数被保留。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241010201051.jpg}
+    \caption{F2 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F2-mask-Ex8.png}
+    \caption{F2 相机成像}
+  \end{minipage}
+\end{figure}
+
+再用 VA100 作为 Mask，遮住傅里叶面上除了中间列以外的其他部分。观察到图像变为横条纹，这是因为有水平分量的波数均被滤去。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164802.jpg}
+    \caption{F2 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F2-mask-Ex9.png}
+    \caption{F2 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F6}
+调整 Target 上的 F6 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164805.jpg}
+    \caption{F6 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F6-nomask.png}
+    \caption{F6 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了中间列以外的其他部分。观察到图像变为横条纹，这同样是因为具有水平分量的波数均被滤去。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164808.jpg}
+    \caption{F6 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F6-mask-Ex11.png}
+    \caption{F6 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F7}
+调整 Target 上的 F7 图像到光路中，使其能够在相机中清晰成像。观察到傅里叶图像有多个从中心向外的射线，这是因为 F7 具有多个方向的平移不变性。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164811.jpg}
+    \caption{F7 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F7-nomask.png}
+    \caption{F7 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了中间列以外的其他部分。观察到图像变为有深浅变化的厚横条纹，这是因为 F7 在竖直方向上有多种频率。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164815.jpg}
+    \caption{F7 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F7-mask-Ex12.png}
+    \caption{F7 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F11}
+调整 Target 上的 F11 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164819.jpg}
+    \caption{F11 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F11-nomask.png}
+    \caption{F11 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了中间列以外的其他部分。观察到图像变为稀疏的细横条纹，这是因为 F11 原本在竖直方向上就是稀疏的。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164822.jpg}
+    \caption{F11 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F11-mask-Ex13.png}
+    \caption{F11 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F9}
+调整 Target 上的 F9 图像到光路中，使其能够在相机中清晰成像。观察到傅里叶图像仅有水平光点，这是因为 F9 是由竖条纹构成的，其主要的波数均是水平方向的。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164825.jpg}
+    \caption{F9 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F9-nomask.png}
+    \caption{F9 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了零级以外的其他部分。观察到没有竖条纹的笑脸，这是由于在水平方向上周期性变化的成分均被滤去。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164828.jpg}
+    \caption{F9 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F9-mask-Ex14.png}
+    \caption{F9 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 分别仅保留傅里叶面上的一级和二级。均能在相机中观察到笑脸。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F9-mask1-Ex16.png}
+    \caption{F9 相机成像（保留一级）}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F9-mask2-Ex16.png}
+    \caption{F9 相机成像（保留二级）}
+  \end{minipage}
+\end{figure}
+\subsubsection{F12}
+调整 Target 上的 F12 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164831.jpg}
+    \caption{F12 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F12-nomask.png}
+    \caption{F12 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了中间列以外的其他部分。观察到 B 变暗而 A 亮度保持，这是因为 B 是水平周期条纹构成的，而 A 是竖直周期条纹构成的。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164835.jpg}
+    \caption{F12 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F12-mask-Ex17.png}
+    \caption{F12 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F10}
+调整 Target 上的 F10 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164838.jpg}
+    \caption{F10 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F10-nomask.png}
+    \caption{F10 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 VA100 遮住傅里叶面上除了中间列以外的其他部分。观察到门和烟囱变暗而房子主体亮度保持，这是因为门和烟囱分别是斜条纹和竖条纹，因此被滤去，而房子主题是横条纹故没有被滤掉。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164842.jpg}
+    \caption{F10 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F10-mask-Ex19.png}
+    \caption{F10 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F8}
+调整 Target 上的 F8 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164844.jpg}
+    \caption{F8 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F8-nomask.png}
+    \caption{F8 相机成像}
+  \end{minipage}
+\end{figure}
+
+将 EDU-TGC1 作为 Mask，用横条纹遮住傅里叶面上的奇数级。观察到图像横条纹变密集，这是因为仅保留偶数级后图像在空间上的基频变为原本的两倍。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164851.jpg}
+    \caption{F8 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F8-mask-Ex20.png}
+    \caption{F8 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F5}
+调整 Target 上的 F5 图像到光路中，使其能够在相机中清晰成像。观察到傅里叶图像有六个方向的射线，这是因为 F5 在这些方向上均有平移对称性。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164855.jpg}
+    \caption{F5 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F5-nomask.png}
+    \caption{F5 相机成像}
+  \end{minipage}
+\end{figure}
+
+用 EDU-TGC1 遮住傅里叶面上各个方向的奇数级。观察到图像变为更密集排列的小三角形，这是因为空间基频变为原来的两倍。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164858.jpg}
+    \caption{F5 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F5-mask-Ex21.png}
+    \caption{F5 相机成像}
+  \end{minipage}
+\end{figure}
+\subsubsection{F14}
+调整 Target 上的 F14 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164902.jpg}
+    \caption{F14 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F14-nomask.png}
+    \caption{F14 相机成像}
+  \end{minipage}
+\end{figure}
+
+将 ID12(/M) 作为 Mask，缩小傅里叶面上可以通过的光圈大小。观察到图像中心周边变暗。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164905.jpg}
+    \caption{F14 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F14-mask1-Ex22.png}
+    \caption{F14 相机成像}
+  \end{minipage}
+\end{figure}
+
+再进一步缩小傅里叶面上可以通过的光圈大小到最小，观察到图像中心周边更大范围变暗。这是由于高频部分被滤去了更多，靠近图像中心的高频部分亮度变暗。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164907.jpg}
+    \caption{F14 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F14-mask2-Ex22.png}
+    \caption{F14 相机成像}
+  \end{minipage}
+\end{figure}
+
+改用 VA100 作为 Mask，遮住傅里叶面上除了中间竖列以外的其他部分。观察到图像中心上下变暗，这是因为中心上下的水平方向高频成分均被滤去了。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164911.jpg}
+    \caption{F14 傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F14-mask-Ex23.png}
+    \caption{F14 相机成像}
+  \end{minipage}
+\end{figure}
+
 \subsection{巴比涅原理}
 • 先依照文档重新搭建完整的 4f 光学系统。
 

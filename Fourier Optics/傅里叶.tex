@@ -552,9 +552,53 @@
 观察到相机中成像出原图像的互补结构，这说明原图像的傅里叶变换图像除了零阶衍射外与原图像是一致的，这就验证了巴比内原理。
 
 \subsection{图像编辑}
-* 这部分实验将在下一节实验课中完成。
-* 柔焦可以突出图像的低频成分，暗场成像可以突出图像的高频成分。
-\subsection{Inverse Fourier Target}
+\subsubsection{柔焦}
+• 选择 Target 上的 F12 图像到光路中，使其能够在相机中清晰成像，并观察屏上的傅里叶图像。用 ID12(/M) 作为 Mask 逐渐缩小傅里叶面上可通过的光圈大小，然后观察相机和观察屏上的图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164739.jpg}
+    \caption{F12 傅里叶面}
+  \end{minipage}
+  \hspace{0.05\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F12-nomask-Ex26.png}
+    \caption{F12 相机成像}
+  \end{minipage}
+  \hspace{0.05\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164751.jpg}
+    \caption{F12 缩小光圈后傅里叶面}
+  \end{minipage}
+  \begin{minipage}[b]{0.2\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F12-mask-Ex26.png}
+    \caption{F12 缩小光圈后相机成像}
+  \end{minipage}
+\end{figure}
+
+柔焦可以突出图像的低频成分，使得图像变的模糊。
+\subsubsection{暗场成像}
+• 仍选择 F12。将 EDU-TGC1 作为 Mask，遮住傅里叶面上的零级点，然后观察相机和观察屏上的图像。
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/微信图片_20241017164755.jpg}
+    \caption{F12 遮住零级点后傅里叶面}
+  \end{minipage}
+  \hspace{0.1\textwidth} % 图片之间的水平间距
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pictures/F12-mask-Ex27.png}
+    \caption{F12 遮住零级点后相机成像}
+  \end{minipage}
+\end{figure}
+
+暗场成像可以突出图像的高频成分。
 \subsection{衍射极限分辨率}
 * 这部分实验将在下一节实验课中完成。
 * 实验验证了阿贝衍射极限定律，只有当至少第一个衍射阶次通过成像系统时，才能形成清晰

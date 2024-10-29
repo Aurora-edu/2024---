@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.31)  29 OCT 2024 23:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.31)  30 OCT 2024 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,6 +1008,9 @@ File: pictures/微信图片_20241010200942.jpg Graphic file (type bmp)
 File: pictures/微信图片_20241010200955.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010200955.jpg>
 
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 66.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1033,6 +1036,9 @@ File: pictures/微信图片_20241010201022.jpg Graphic file (type bmp)
 File: pictures/微信图片_20241010201025.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201025.jpg>
 
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 104.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1045,6 +1051,9 @@ File: pictures/微信图片_20241010201028.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201028.jpg>
 File: pictures/微信图片_20241010201031.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201031.jpg>
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 127.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1069,6 +1078,9 @@ File: pictures/F2-mask-Ex9.png Graphic file (type bmp)
 <pictures/F2-mask-Ex9.png>
 
 
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 181.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1089,6 +1101,9 @@ File: pictures/微信图片_20241017164811.jpg Graphic file (type bmp)
 <pictures/微信图片_20241017164811.jpg>
 File: pictures/F7-nomask.png Graphic file (type bmp)
 <pictures/F7-nomask.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 229.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1113,6 +1128,9 @@ File: pictures/F11-mask-Ex13.png Graphic file (type bmp)
 <pictures/F11-mask-Ex13.png>
 
 
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 277.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1133,6 +1151,9 @@ File: pictures/F9-mask1-Ex16.png Graphic file (type bmp)
 <pictures/F9-mask1-Ex16.png>
 File: pictures/F9-mask2-Ex16.png Graphic file (type bmp)
 <pictures/F9-mask2-Ex16.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 325.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1157,6 +1178,9 @@ File: pictures/F10-nomask.png Graphic file (type bmp)
 <pictures/F10-nomask.png>
 
 
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 373.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1177,6 +1201,9 @@ File: pictures/微信图片_20241017164851.jpg Graphic file (type bmp)
 <pictures/微信图片_20241017164851.jpg>
 File: pictures/F8-mask-Ex20.png Graphic file (type bmp)
 <pictures/F8-mask-Ex20.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 421.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1201,6 +1228,9 @@ File: pictures/F14-nomask.png Graphic file (type bmp)
 <pictures/F14-nomask.png>
 
 
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 469.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1223,6 +1253,9 @@ File: pictures/F14-mask-Ex23.png Graphic file (type bmp)
 <pictures/F14-mask-Ex23.png>
 
 
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 517.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -1239,6 +1272,17 @@ File: pictures/微信图片_20241010201100.jpg Graphic file (type bmp)
 <pictures/微信图片_20241010201100.jpg>
 File: pictures/F13-mask-Ex24.png Graphic file (type bmp)
 <pictures/F13-mask-Ex24.png>
+File: pictures/微信图片_20241017164739.jpg Graphic file (type bmp)
+<pictures/微信图片_20241017164739.jpg>
+File: pictures/F12-nomask-Ex26.png Graphic file (type bmp)
+<pictures/F12-nomask-Ex26.png>
+File: pictures/微信图片_20241017164751.jpg Graphic file (type bmp)
+<pictures/微信图片_20241017164751.jpg>
+File: pictures/F12-mask-Ex26.png Graphic file (type bmp)
+<pictures/F12-mask-Ex26.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 582.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1249,6 +1293,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [12]
+File: pictures/微信图片_20241017164755.jpg Graphic file (type bmp)
+<pictures/微信图片_20241017164755.jpg>
+File: pictures/F12-mask-Ex27.png Graphic file (type bmp)
+<pictures/F12-mask-Ex27.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 622.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -1266,6 +1318,9 @@ L3 programming layer <2022/07/14>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
@@ -1274,16 +1329,19 @@ Package rerunfilecheck Warning: File `傅里叶.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `傅里叶.out':
-(rerunfilecheck)             Before: D9898C44BF027F507BCA97DEB2CB11F1;2822
-(rerunfilecheck)             After:  19C2AF988DB310D19B7B207C136D2CE8;2984.
+(rerunfilecheck)             Before: E0CABF1B8076EB94DEA252A7875D7F1D;2369
+(rerunfilecheck)             After:  362BFC6DCABAD436D31A0CF6FC53267A;3172.
+
+Package lastpage Warning: Rerun to get the references right on input line 622.
+
  ) 
 Here is how much of TeX's memory you used:
- 28585 strings out of 474773
- 626856 string characters out of 5757724
+ 28642 strings out of 474773
+ 628791 string characters out of 5757724
  1950839 words of memory out of 5000000
- 50218 multiletter control sequences out of 15000+600000
- 560295 words of font info for 67 fonts, out of 8000000 for 9000
+ 50268 multiletter control sequences out of 15000+600000
+ 560303 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,107p,1212b,372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,107p,1212b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 傅里叶.pdf (13 pages).

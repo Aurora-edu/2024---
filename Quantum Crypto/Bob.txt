@@ -1,0 +1,21 @@
+Ex1
+Bob Base:xx++++x++x++x+++xx+x+x++++x++xxxx+xx++xx+x+x+++++x+x
+
+Bob Rece:1110000010100111010111001111101110001100110010010111
+
+Ali Base:x+x++xxx+x++++xx+x+xxx+x++x++++++x+x+xxx+xx++xxx++xx
+Key:1000101011011011111010011101
+
+Rec Bit:10100011110000011000
+Key Bit:10001010110110111110
+Dat Bit:00101001000110100110
+
+Letter:FENG
+
+Ex2
+Bob Base:x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x
+
+Bob Rece:0010100111000100011110000000110101101001001001100011
+
+Ali Base:x+++x+x+++xxxxx++x+xx++++x++x+x+++x++x+x+xxxxxxx+++x
+Key:0010100100011110010001100011

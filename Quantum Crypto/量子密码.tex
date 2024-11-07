@@ -74,20 +74,57 @@ BB84协议是一种量子密钥分发协议，用于安全地在通信双方间�
 \end{figure}
 
 Alice 生成两段 52 bits 的随机基底和密钥，Bob 生成一段 52 bits 的随机基底。
+\begin{lstlisting}[language=Python,numbers=left,caption=生成随机基底和密钥代码]
+import random
+AliceBase=AliceKey=BobBase=""
+for i in range(52):
+    AliceBase+=random.choice(['+','x'])
+    AliceKey+=random.choice(['0','1'])
+    BobBase+=random.choice(['+','x'])
+\end{lstlisting}
 \begin{lstlisting}
-    Alice Base: x+x++xxx+x++++xx+x+xxx+x++x++++++x+x+xxx+xx++xxx++xx
-    Alice Key:  
+Alice Base: x+x++xxx+x++++xx+x+xxx+x++x++++++x+x+xxx+xx++xxx++xx
+Alice Key:  1100010010100100010101001111101101101100110011000011
     
-    Bob Base:   xx++++x++x++x+++xx+x+x++++x++xxxx+xx++xx+x+x+++++x+x
+Bob Base:   xx++++x++x++x+++xx+x+x++++x++xxxx+xx++xx+x+x+++++x+x
 \end{lstlisting}
 
-Alice 用其选择的基底发送其生成的密钥，Bob 用自己选择的基底测量收到的光子。
-\begin{enumerate}
-\item 设置Alice和Bob的基底选择装置
-\item 进行一系列比特传输
-\item 记录双方使用的基底和测量结果
-\item 通过比对确定共享密钥
-\end{enumerate}
+Alice 用其选择的基底发送其生成的密钥，Bob 用自己选择的基底测量收到的光子。以下是 Bob 收到的光子的测量结果：
+\begin{lstlisting}
+Bob Receive:1110000010100111010111001111101110001100110010010111
+\end{lstlisting}
+
+Alice 和 Bob 交换各自随机选择的基底，去除使用不同基底的位，保留使用相同基底的测量结果作为密钥。
+\begin{lstlisting}[language=Python,numbers=left,caption=求得最终密钥代码]
+    AliceEncryptKey=BobEncryptKey=""
+    for i in range(52):
+        if AliceBase[i]==BobBase[i]:
+            AliceEncryptKey+=AliceKey[i]
+            BobEncryptKey+=BobReceive[i]
+\end{lstlisting}
+\begin{lstlisting}
+Alice Encrypt Key: 1000101011011011111010011101
+
+Bob Encrypt Key:   1000101011011011111010011101
+\end{lstlisting}
+
+此时 Alice 和 Bob 都得到了长度为 28 bits 的相同的密钥。他们接下来将用这组密钥加密并传输数据。
+
+Alice 想传输的信息为 FENG，他先根据英文字母和二进制比特的对应表将信息转为 20 bits 待传输数据，接着用上面得到的密钥加密。
+\begin{lstlisting}
+Data:      00101001000110100110
+EncryptKey:1000101011011011111010011101
+Encrypted: 10100011110000011000
+\end{lstlisting}
+
+Alice 和 Bob 均采用 + 作为基底，Alice 将加密后的密文用 + 基底发给 Bob，Bob 接收测量后用自己的密钥解密得到原始数据。
+\begin{lstlisting}
+BobReceive:10100011110000011000
+EncryptKey:1000101011011011111010011101
+Data:      00101001000110100110
+\end{lstlisting}
+
+查询字母二进制对应表，可以还原出传递信息为 FENG。这样，Alice 和 Bob 成功利用量子分发的密钥加密传输了四个字母。
 
 \subsection{窃听检测实验}
 \begin{enumerate}

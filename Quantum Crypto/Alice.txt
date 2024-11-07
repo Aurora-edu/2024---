@@ -1,0 +1,14 @@
+Ex1
+Alice = "1100010010100100010101001111101101101100110011000011"
+Base = "x+x++xxx+x++++xx+x+xxx+x++x++++++x+x+xxx+xx++xxx++xx"
+Bob =  "xx++++x++x++x+++xx+x+x++++x++xxxx+xx++xx+x+x+++++x+x"
+same_positions = "10001010110110111110"
+message =        "00101001000110100110"
+
+Ex2
+Alice = "0011100010101000001111110001000010101101011100110010"
+Base =  "x+++x+x+++xxxxx++x+xx++++x++x+x+++x++x+x+xxxxxxx+++x"
+Bob =   "x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x"
+Eve =   "x++x+++++x+x++x++++xx+x+++xxx++++x++++xx+xxx++x+x+++"
+same_positions = "0010111000001110011000110010"
+Bob_same =       "0010100100011110010001100011"

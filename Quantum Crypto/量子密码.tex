@@ -3,6 +3,7 @@
 \usepackage{template_by_mny}
 \usepackage{float} 
 \usepackage{listings}
+\lstset{basicstyle=\ttfamily, breaklines=true, frame=single}
 
 \title{量子密码学演示实验报告}
 \class{物理 32/物理 31}
@@ -73,10 +74,12 @@ BB84协议是一种量子密钥分发协议，用于安全地在通信双方间�
 \end{figure}
 
 Alice 生成两段 52 bits 的随机基底和密钥，Bob 生成一段 52 bits 的随机基底。
+\begin{lstlisting}
     Alice Base: x+x++xxx+x++++xx+x+xxx+x++x++++++x+x+xxx+xx++xxx++xx
     Alice Key:  
     
     Bob Base:   xx++++x++x++x+++xx+x+x++++x++xxxx+xx++xx+x+x+++++x+x
+\end{lstlisting}
 
 Alice 用其选择的基底发送其生成的密钥，Bob 用自己选择的基底测量收到的光子。
 \begin{enumerate}

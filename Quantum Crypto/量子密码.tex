@@ -129,10 +129,54 @@ Data:      00101001000110100110
 \subsection{窃听检测实验}
 \begin{enumerate}
 \item 在光路中加入Eve的测量装置
-\item 重复密钥生成过程
-\item 分析错误率变化
-\end{enumerate}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241031162855.jpg}
+    \caption{包含 Bob, Eve, Alice 的完整实验系统}
+\end{figure}
+\item Alice，Bob和Eve各自随机选一对基，Alice选择要发送的信息
+\begin{lstlisting}
+    Alice Base: x+++x+x+++xxxxx++x+xx++++x++x+x+++x++x+x+xxxxxxx+++x
+    Alice Key:  0011100010101000001111110001000010101101011100110010
+    
+    Bob Base:   x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x
 
+    Eve Base:   x++x+++++x+x++x++++xx+x+++xxx++++x++++xx+xxx++x+x+++
+\end{lstlisting}
+
+
+\item 进行传输过程
+
+Alice和Bob基于各自的基底传输数据，但是由于Eve在中间用他的基（0或45度）窃听，所以只有在Eve的基和Alice相同时Bob才能收到正确的信息，如果基底不同，Bob收到的信息将是随机的。
+
+\begin{lstlisting}
+    Bob Base:x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x
+    Bob Rece:0010100111000100011110000000110101101001001001100011
+\end{lstlisting}
+\item 结果分析
+
+经过比较(代码如下)
+\begin{lstlisting}[language=python]
+def compare_strings(str1, str2):
+    differences = []
+    for i in range(min(len(str1), len(str2))):
+        if str1[i] == str2[i]:
+            differences.append((i, str1[i], str2[i]))
+    return differences
+
+differences = compare_strings(AliceBase, Bob)
+print(differences)
+same_positions = ''.join([AliceMessage[i] for i, _, _ in differences])
+print(same_positions)
+\end{lstlisting}
+结果得到，在Alice和Bob基相同的位置，
+\begin{lstlisting}
+A发出的Bit:    0010111000001110011000110010
+Bob收到的Bit:  0010100100011110010001100011
+\end{lstlisting}
+
+比较得到，相同基一共有28Bit，其中有8Bit是错误的，错误率约为28\%,与理论预测的25\%相符。
+\end{enumerate}
 \section{实验思考}
 \begin{enumerate}
 \item 本实验使用的是脉冲激光而非单光子源，这与实际的量子密码系统有何区别？

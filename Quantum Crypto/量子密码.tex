@@ -42,7 +42,7 @@ BB84协议是一种量子密钥分发协议，用于安全地在通信双方间�
 \begin{itemize}
 \item 铝制光学平台
 \item 635nm激光二极管模块
-\item lambda/2波片
+\item $\lambda$/2波片
 \item 偏振分束器
 \item 光电探测器
 \item 旋转支架
@@ -54,14 +54,14 @@ BB84协议是一种量子密钥分发协议，用于安全地在通信双方间�
 \subsection{系统调试}
 \begin{enumerate}
 \item 安装激光器并调节光路
-\item 校准lambda/2波片的角度设置
+\item 校准$\lambda$/2波片的角度设置
 \item 调节探测器的灵敏度
 \end{enumerate}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241031162855.jpg}
-    \caption{包含 Bob, Eve, Alice 的完整实验系统}
+    \caption{包含 Alice, Eve, Bob 的完整实验系统}
 \end{figure}
 
 \subsection{密钥生成实验}
@@ -70,7 +70,7 @@ BB84协议是一种量子密钥分发协议，用于安全地在通信双方间�
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241031162758.jpg}
-    \caption{仅包含 Bob, Alice 的实验系统}
+    \caption{仅包含 Alice, Bob 的实验系统}
 \end{figure}
 
 Alice 生成两段 52 bits 的随机基底和密钥，Bob 生成一段 52 bits 的随机基底。
@@ -132,16 +132,16 @@ Data:      00101001000110100110
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241031162855.jpg}
-    \caption{包含 Bob, Eve, Alice 的完整实验系统}
+    \caption{包含 Alice, Eve, Bob 的完整实验系统}
 \end{figure}
 \item Alice，Bob和Eve各自随机选一对基，Alice选择要发送的信息
 \begin{lstlisting}
-    Alice Base: x+++x+x+++xxxxx++x+xx++++x++x+x+++x++x+x+xxxxxxx+++x
-    Alice Key:  0011100010101000001111110001000010101101011100110010
-    
-    Bob Base:   x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x
+Alice Base: x+++x+x+++xxxxx++x+xx++++x++x+x+++x++x+x+xxxxxxx+++x
+Alice Key:  0011100010101000001111110001000010101101011100110010
 
-    Eve Base:   x++x+++++x+x++x++++xx+x+++xxx++++x++++xx+xxx++x+x+++
+Bob Base:   x++x+++x+xx+xxx++x+xxxxx++xx+x+xxx+++x+++++++xxx+++x
+
+Eve Base:   x++x+++++x+x++x++++xx+x+++xxx++++x++++xx+xxx++x+x+++
 \end{lstlisting}
 
 
@@ -179,10 +179,10 @@ Bob收到的Bit:  0010100100011110010001100011
 \end{enumerate}
 \section{实验思考}
 \begin{enumerate}
-\item 本实验使用的是脉冲激光而非单光子源，这与实际的量子密码系统有何区别？
+\item 本实验使用的是脉冲激光而非单光子源，这与实际的量子密码系统有何区别？使用脉冲激光而非单光子源是否会削弱量子密码系统的安全性？
 \item BB84协议中为什么要使用两组不同的基底？
 \item 在有窃听者的情况下，为什么会出现约25\%的错误率？
-\item 量子密码学相比经典密码学有哪些优势和局限性？
+\item Alice 和 Bob 可以通过比较密钥的不同发现信道被监听，那么 Alice 和 Bob 有没有不用公开密钥就能发现信道被监听的方法？
 \end{enumerate}
 
 \section{总结}

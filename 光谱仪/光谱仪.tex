@@ -1,5 +1,6 @@
 % !TeX program = xelatex
 \documentclass{ctexart}
+\usepackage[table]{xcolor}
 \usepackage{template_by_mny}
 \usepackage{float} 
 \usepackage{listings}
@@ -84,9 +85,40 @@
 
 \subsection{实验三：汞光谱线波长测量}
 1. 使用光栅观察汞光谱
-2. 测量三条主要谱线的衍射角
-3. 利用光栅方程计算波长
 
+2. 根据如下公式即可通过测量第k级角度$\theta_k$计算波长$\lambda$
+\begin{equation}
+    \sin \theta_k = k \cdot \lambda \cdot g \quad k=0,1,2,\ldots
+\end{equation}
+这里我们测量第一级衍射（k=1），衍射常数$g=1200  \frac{lines}{mm}$
+
+我们通过测量x和y来间接测量$\theta$,它们的关系由如下公式给出
+\begin{equation}
+    \theta =\arctan \frac{y}{x}
+\end{equation}
+x和y的含义由下图给出
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/xy示意图.png}
+    \caption{x,y定义}
+\end{figure}
+测量数据与计算得到的波长如下表所示
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \rowcolor{yellow!25} x (cm) & y (cm) & $\lambda_{Exp}$ (nm) & $\lambda_{Reference}$ (nm) \\
+        \hline
+        23.4   & 14.1   & 430                  & 436 (Blue/Violet)           \\
+        \hline
+        23.4   & 18.9   & 524                  & 546 (Green)                 \\
+        \hline
+        23.4   & 21.6   & 565                  & 577 / 579 (Orange Double)   \\
+        \hline
+    \end{tabular}
+\end{table}
+
+可以看到实验与理论波长较为接近，其中绿色波长差别略大，这是因为光谱中绿色展宽较大，有多种绿色，我们测量的绿色与理论的绿色不完全一样。而绿色相对较为接近，这是由于蓝色的谱线较为尖锐。图像不完美地在焦距上会带来误差，但是距离测量带来的误差更大。
 \section{实验思考}
 
 \subsection{狭缝宽度的影响}

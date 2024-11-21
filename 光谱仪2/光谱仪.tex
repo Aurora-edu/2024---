@@ -22,17 +22,15 @@
 
 光谱仪是一种用于分析光谱的光学仪器。其基本原理包括：
 
-\subsection{光栅衍射}
-当光线通过光栅时，不同波长的光会被衍射到不同的方向。光栅方程为：
-\[ \sin \theta_k = k\lambda/d \]
-其中d为光栅常数，k为衍射级数，$\lambda$为入射光波长，$\theta_k$为k级衍射角。
+\subsection{三棱镜折射}
+* 三棱镜折射角公式：
 
 \subsection{光谱仪的组成}
 一个基本的光谱仪包含以下部件：
 \begin{itemize}
     \item 入射狭缝：控制入射光束宽度
     \item 准直系统：将发散光束准直
-    \item 分光元件：光栅或棱镜
+    \item 分光元件：三棱镜
     \item 聚焦系统：将分光后的光聚焦
     \item 观测屏/探测器：用于观测光谱
 \end{itemize}
@@ -42,7 +40,7 @@
 \begin{itemize}
     \item EDU-SPEB2光谱仪教学套件
     \item 可调节狭缝
-    \item 600 lines/mm和1200lines/mm反射光栅
+    \item 三棱镜
     \item LED光源及其USB供电支架
     \item 双凸透镜（f=50mm和100mm）
     \item 观测屏
@@ -58,32 +56,12 @@
     \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241107162037.jpg}
     \caption{LED光源安装}
 \end{figure}
-\subsubsection{光栅光谱仪安装}
-在狭缝后约 20cm 处放置光栅并固定。然后将 100mm 透镜放置在狭缝与光栅正中间位置。
-
-旋转光栅使得光栅的零级反射（白光）正好反射回狭缝处。
-
-放置光屏使光屏上能看到一级衍射的彩虹。放置黑色挡板阻隔光源直射光屏。
-
-在狭缝后放上绿色滤光片，这样一级衍射就是一条细线，方便对焦。微调透镜使得光屏上的图像变得锐利。调好后固定透镜，并移除绿色滤光片。
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241107162049.jpg}
-    \caption{光栅光谱仪安装}
-\end{figure}
+\subsubsection{三棱镜光谱仪安装}
+*
 \section{实验步骤}
 
-\subsection{实验一：入射狭缝宽度的影响}
-1. 按照说明书组装光谱仪基本光路
-
-2. 调节入射狭缝的宽度几乎关闭，可以看到屏幕上光强非常低
-
-3. 慢慢打开入射狭缝，最开始可以看到像的宽度几乎不变，但是光强逐渐变强
-
-4. 入射狭缝达到一定宽度后，再继续调节，可以看到像的宽度开始变大。这是因为狭缝的宽度已经超过了衍射极限，因此散射开始影响。
-
-5. 完整的动态过程见视频
-\subsection{实验二：LED光谱观测}
+\subsection{实验一：LED光谱观测}
+**
 1. 将LED安装在USB供电支架上并通电。LED的光谱如图，可以看到有两个尖峰，并且在蓝色和绿色之间波长的光非常弱，几乎消失。
 \begin{figure}[H]
     \centering
@@ -99,57 +77,16 @@
 \end{figure}
 与理论相符，可以看到蓝色和绿色之间的光强非常弱。
 
-\subsection{实验三：汞光谱中的三条线的波长测量}
-1. 调节光路如图，使用光栅观察汞光谱
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241107162049.jpg}
-    \caption{光路图}
-\end{figure}
+\subsection{实验二：已知光谱线的棱镜折射率测量}
+**
 
-2. 根据如下公式即可通过测量第k级角度$\theta_k$计算波长$\lambda$
-\begin{equation}
-    \sin \theta_k = k \cdot \lambda \cdot g \quad k=0,1,2,\ldots
-\end{equation}
-这里我们测量第一级衍射（k=1），衍射常数$g=1200  \frac{lines}{mm}$
-
-我们通过测量x和y来间接测量$\theta$,它们的关系由如下公式给出
-\begin{equation}
-    \theta =\arctan \frac{y}{x}
-\end{equation}
-x和y的含义由下图给出
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/xy示意图.png}
-    \caption{x,y定义}
-\end{figure}
-测量数据与计算得到的波长如下表所示
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        \rowcolor{yellow!25} x (cm) & y (cm) & $\lambda_{Exp}$ (nm) & $\lambda_{Reference}$ (nm) \\
-        \hline
-        23.4   & 14.1   & 430                  & 436 (Blue/Violet)           \\
-        \hline
-        23.4   & 18.9   & 524                  & 546 (Green)                 \\
-        \hline
-        23.4   & 21.6   & 565                  & 577 / 579 (Orange Double)   \\
-        \hline
-    \end{tabular}
-\end{table}
-
-可以看到实验与理论波长较为接近，其中绿色波长差别略大，这是因为光谱中绿色展宽较大，有多种绿色，我们测量的绿色与理论的绿色不完全一样。而绿色相对较为接近，这是由于蓝色的谱线较为尖锐。图像不完美地在焦距上会带来误差，但是距离测量带来的误差更大。
 \section{实验思考}
-
-\subsection{狭缝宽度的影响}
-入射狭缝宽度影响光谱的分辨率和亮度。狭缝越窄，分辨率越高，但光强越弱；狭缝越宽，光强越大，但分辨率降低。这是因为狭缝宽度决定了入射光束的相干性。
 
 \subsection{LED光谱特征}
 LED发出的是连续光谱，但在特定波长范围内强度较大。这反映了LED的发光机理是由电子在半导体能带间跃迁产生的。
 
-\subsection{光栅光谱测量}
-使用光栅进行波长测量时，需要考虑衍射级数和光栅常数的影响。测量精度受到角度测量精度和光栅分辨率的限制。
+\subsection{三棱镜光谱测量}
+**
 
 \section{总结}
 
@@ -157,10 +94,10 @@ LED发出的是连续光谱，但在特定波长范围内强度较大。这反�
 \begin{itemize}
     \item 理解了光谱仪的基本工作原理
     \item 掌握了调节光谱仪的方法
-    \item 学会了使用光栅进行波长测量
+    \item 学会了测量三棱镜的折射率
     \item 认识到了不同光源的光谱特征
 \end{itemize}
 
-实验过程中发现光路调节较为关键，需要仔细进行准直和聚焦。建议在后续实验中可以增加不同光源的对比分析，以及尝试使用棱镜进行光谱观测。
+实验过程中发现光路调节较为关键，需要仔细进行准直和聚焦。建议在后续实验中可以增加不同光源的对比分析。
 
 \end{document}

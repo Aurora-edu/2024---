@@ -51,7 +51,11 @@
 先在左侧固定光源，再在光源后 24cm 处固定可调节狭缝，并确保两者在同一光路中。
 
 在光源与可调狭缝正中间放置 50mm 透镜，然后将透镜缓慢向光源移动直到可调狭缝上出现清晰的像。调好后将透镜固定。
-
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/微信图片_20241121154954.jpg}
+    \caption{LED光源安装}
+\end{figure}
 \subsubsection{三棱镜光谱仪安装}
 *
 \section{实验步骤}
@@ -59,15 +63,48 @@
 \subsection{实验一：LED光谱观测}
 **
 1. 将LED安装在USB供电支架上并通电。LED的光谱如图，可以看到有两个尖峰，并且在蓝色和绿色之间波长的光非常弱，几乎消失。
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.2\textwidth]{pictures/光谱图.png}
+    \caption{LED理论光谱}
+\end{figure}
 
 2. 经过观察如图
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.2\textwidth]{pictures/微信图片_20241121154923.jpg}
+    \caption{LED观察光谱}
+\end{figure}
 与理论相符，可以看到蓝色和绿色之间的光强非常弱。
 
 \subsection{实验二：已知光谱线的棱镜折射率测量}
-**
+根据以下公式可以得到折射率
+\begin{equation}
+    n = \frac{\sin(\frac{\gamma + 60°}{2})}{\sin(30°)}
+\end{equation}
+其中$\gamma$为三棱镜的折射角
 
+我们通过测量x和y来间接测量$\gamma$,它们的关系由如下公式给出
+\begin{equation}
+    \gamma = \arctan(\frac{y}{x})
+\end{equation}
+x和y的含义由下图给出
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth,height=0.3\textwidth]{pictures/xy示意图.png}
+    \caption{x,y定义}
+\end{figure}
+测量数据与计算得到的结果如下表所示
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \rowcolor{yellow!25} x (cm) & y (cm) & $\gamma_{Exp}$ (°) & $\gamma_{Reference}$ (°) & $n_{Exp}$  & $n_{Reference}$  \\
+        \hline
+        8.3 & 10.3 & 51.1 & 48.6 & 1.65 & 1.626 \\
+        \hline
+    \end{tabular}
+\end{table}
 \section{实验思考}
 
 \subsection{LED光谱特征}

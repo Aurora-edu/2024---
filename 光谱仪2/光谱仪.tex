@@ -23,7 +23,16 @@
 光谱仪是一种用于分析光谱的光学仪器。其基本原理包括：
 
 \subsection{三棱镜折射}
-三棱镜折射偏转角与折射率关系公式：
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.2\textwidth]{pictures/三棱镜.png}
+    \caption{三棱镜折射}
+\end{figure}
+最小偏转角$\gamma$（见图1）与入射角$\alpha$和折射角$\beta$的关系可在$\alpha = \beta$时获得。此时，光束在棱镜内部平行于底边传播。通过几何关系，可以得出：
+
+$\gamma = \alpha + \beta - 60° = 2\alpha - 60°$
+
+在这种情况下，斯涅尔折射定律（假设$n_{air} = 1$）可以写作：
 \[n=\frac{\sin\left(\frac{\gamma+60^\circ}{2}\right)}{\sin 30^\circ}\]
 
 其中$n$是折射率，$\gamma$是偏转角。不同波长的光折射率不同，因此通过三棱镜后的偏转角也不同，不同波长的光会被偏转到不同方向。

@@ -1,0 +1,44 @@
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{amsfonts,amssymb,amsthm,amsmath,physics,extarrows}
+\usepackage{multirow, makecell}
+
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\numberwithin{equation}{section}
+
+\usepackage{hyperref}
+\hypersetup{hidelinks, colorlinks=true, linkcolor=teal, citecolor=black}
+
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\fancypagestyle{fancy}{
+\fancyhf{}
+\lhead{\the\year 年 \the\month 月}
+\chead{\centering\@title}
+\rhead{第 \thepage\ 页\ \ 共 \pageref{LastPage}\ 页}
+\lfoot{}
+\cfoot{}
+\rfoot{}}
+\pagestyle{fancy}
+
+
+\def\title#1{\gdef\@title{#1}}
+\def\class#1{\gdef\@class{#1}}
+\def\name#1{\gdef\@name{#1}}
+\def\id#1{\gdef\@id{#1}}
+
+\class{[班级]}\name{[姓名]}\id{[学号]}
+\renewcommand\maketitle{
+    \vspace*{.5em}
+    \begin{center}
+        \LARGE{\textbf\@title}
+    \end{center}
+    \vspace*{.2em}
+    \begin{center}
+        \kaishu{\@class\ \ \@name\ \ \@id}
+    \end{center}
+    \vspace*{1em}
+}

@@ -4,6 +4,7 @@
 \usepackage{template_by_mny}
 \usepackage{float} 
 \usepackage{listings}
+\usepackage[figuresright]{rotating}
 \lstset{basicstyle=\ttfamily, breaklines=true, frame=single}
 
 \title{光谱仪教学实验报告}
@@ -89,16 +90,7 @@
     关闭光源，记录万用表的信号值。
     记录万用表的信号值。 稍后将从数据中减去背景光
 \end{itemize}
-经过以上步骤，得到数据
-\begin{table}[!ht]
-    \centering
-    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
-    \hline
-        背景光(mV) & 0.62 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
-        波长(nm) & 340 & 340.25 & 340.5 & 340.75 & 341 & 341.25 & 341.5 & 341.75 & 342 & 342.25 & 342.5 & 342.75 & 343 & 343.25 & 343.5 & 343.75 & 344 & 344.25 & 344.5 & 344.75 & 345 & 345.25 & 345.5 & 345.75 & 346 & 346.25 & 346.5 & 346.75 & 347 & 347.25 & 347.5 & 347.75 & 348 \\ \hline
-        光强(mV) & 0.73 & 0.84 & 1.68 & 4.63 & 10 & 6.26 & 3.55 & 3.08 & 4.89 & 7.8 & 10.74 & 13.11 & 15.29 & 16.69 & 17.7 & 18.44 & 17.5 & 13.79 & 11.3 & 9.83 & 8.39 & 7.15 & 5.99 & 4.96 & 3.53 & 2.94 & 2.44 & 2.05 & 1.77 & 1.5 & 1.29 & 1.16 & 1.04 \\ \hline
-    \end{tabular}
-\end{table}
+经过以上步骤
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{pictures/图片1.png}
@@ -129,8 +121,10 @@
 \end{figure}
 
 \section{实验思考}
-
+\begin{itemize}
+    \item 可以看出，吸收谱在430nm和670nm处有两个低谷，这里样品的吸收率达到最大。
+\end{itemize}
 \section{总结}
-**
+
 
 \end{document}
